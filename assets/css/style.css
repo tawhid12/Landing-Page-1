@@ -1,0 +1,156 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Project Name
+Version:    1.0
+Last change:    24/03/17 [fixed Float bug, vf]
+Author Name: Author Name
+Primary use:    Project Type
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2.
+-------------------------------------------------------------------*/
+
+/*
+==========================================
+    Reset Css
+==========================================
+*/
+body{
+	color:#a9a9a9;
+	font-size:15px;
+	line-height:1.7;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+.welcome-area{
+	position:relative;
+	z-index:1;
+	padding-bottom:100px;
+}
+.welcome-area:after{
+	position:absolute;
+	content:"";
+	top:0;
+	left:0;
+	width:65%;
+	height:100%;
+	background: #005a97; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+    background: -webkit-gradient(linear, 100% 0, 0 0, color-stop(0.01, #005a97), to(#0095be));
+    background: -webkit-linear-gradient(to right, #005a97 1%, #0095be 100%);
+    background: -moz-linear-gradient(to right, #005a97 1%, #0095be 100%);
+    background: -o-linear-gradient(to right, #005a97 1%, #0095be 100%);
+    background: linear-gradient(to right, #005a97 1%, #0095be 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005a97', endColorstr='#0095be',GradientType=1 );
+	z-index:-1;	
+}
+.header-area{
+	padding:30px 0;
+}
+.logo{
+	text-transform:uppercase;
+	font-weight:700;
+	font-size:25px;
+	padding-top:9px;
+}
+.main-menu li{
+	display:inline-block;
+	position:relative;
+}
+.main-menu li a{
+	display:block;
+	padding:18px 17px;
+	text-transform:uppercase;
+	font-size:12px;
+}
+.logo a, .main-menu a{
+	color:#fff;
+	text-decoration:none;
+}
+.header-right-content a{
+	color:#000;
+	padding-top:20px;
+}
+.social-links{
+	display:inline-block;
+	margin-right:50px;
+	margin-left: 20px;
+	border-left:1px solid #EBEBEB;
+	padding-left:20px;
+}
+.social-links a{
+	font-size:14px;
+	display:inline-block;
+}
+.single-slide-item{
+	display:table;
+	width:100%;
+	height:500px;
+	background-position:center;
+	background-size:cover;
+	background-color:#000;
+}
+.slide-bg-1{background-image:url(../img/1.jpg)}
+.slide-bg-2{background-image:url(../img/2.jpg)}
+.slide-bg-3{background-image:url(../img/3.jpg)}
+.slide-inner{
+	display:table-cell;
+	vertical-align:middle;
+	width:100%;
+}
+.slide-text{
+	max-width:700px;
+	color:#fff;
+	padding:130px;
+}
+.slide-text h4{
+	color:#6CBED7;
+	text-transform:uppercase;
+	font-size:17px;
+	font-weight:400;
+}
+.slide-text h2{
+	color:#fff;
+	text-transform:uppercase;
+	font-size:38px;
+	font-weight:900;
+}
+.boxed-btn{
+	font-size:12px;
+	text-transform:uppercase;
+	padding:18px 40px;
+	display:inline-block;
+	color:#fff;
+	background: #005a97; /* Old browsers */
+	background: -moz-linear-gradient(left,  #005a97 1%, #0095be 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #005a97 1%,#0095be 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #005a97 1%,#0095be 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005a97', endColorstr='#0095be',GradientType=1 ); /* IE6-9 */
+}
+.homepage-slides .owl-nav div{
+	color:#fff;
+	display:inline-block;
+	margin-right:20px;
+	font-size:20px;
+	margin-top:15px;
+	opacity:.5;
+}
